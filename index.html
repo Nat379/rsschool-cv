@@ -20,7 +20,6 @@
                   <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                   <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                   <li class="nav-item"><a href="#courses" class="nav-link">Code</a></li>
-                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                   <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                   <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 </ul>
@@ -28,39 +27,63 @@
         </div>
     </header>
     <main class="main">
-        <img class="img" src="./assets/image.jpg" alt="avatar">
-        <div class="container main-container" >
-            <section class="section" id="profile">
+        <section class="container main-container intro">
+            <div class="profile-pic">
+                <img class="img" src="./assets/image.jpg" alt="avatar">
+            </div>
+            <div class="titles">
                 <h1 class="section-title">Natalia Shkalikova</h1>
                 <h2 class="section-info">Frontend developer</h2>
-            </section>
-            <section class="section" id="contacts">
-                <h2 class="section-title">Contacts</h2>
-            </section>
-            <section class="section" id="summary">
-                <h2 class="section-title">Summary</h2>
+            </div>
+        </section>
+        <div class="container main-container" >
+        <section class="info">
+            <div class="column">
+                <div class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <p>nat.sh379@gmail.com</p>
+                </div>
+                <div class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
                 <p>Frontend developer with special care on the user experience. 
                     Passionate for learning new technologies and methodologies</p>
-            </section>
-            <section class="section" id="skills">
-                <h2 class="section-title">Skills</h2>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title">Code</h2>
-            </section>
-            <section class="section" id="courses">
-                <h2 class="section-title">Courses</h2>
-            </section>
-            <section class="section" id="projects">
-                <h2 class="section-title">Projects</h2>
-            </section>
-            <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
-            </section>
-            <section class="section" id="languages">
-                <h2 class="section-title">Languages</h2>
-            </section>
-        </div>
+                </div>
+                <div class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <p>Coding
+                        HTML, CSS3, JavaScript, GIT, GITHUB
+                        </p>
+                </div>
+                <div class="section" id="code">
+                    <h2 class="section-title">Code</h2>
+                    <p>
+                        <code>
+                            <pre>
+                                function isIsogram(str) {
+                                    const uniqueChars = [...new Set(str.toLowerCase())];
+                                    return uniqueChars.length === str.length;
+                                  }
+                            </pre>
+                        </code>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section" id="courses">
+                    <h2 class="section-title">Courses</h2>
+                    <p>FreeCodeCamp, RSS Stage 0</p>
+                </div>
+                <div class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <p>NULES (Ukraine)</p>
+                </div>
+                <div class="section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <p>Ukrainian(nativ), English(Intermidiat)
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container"></div>

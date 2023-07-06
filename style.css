@@ -27,10 +27,10 @@ body {
 * {
     box-sizing: border-box;
   }
-  .container {
+  /* .container {
     max-width: 1440px;
     margin: 0 auto;
-  }
+  } */
 
   .nav-list {
     display: flex;
@@ -55,14 +55,14 @@ body {
     color: rgba(115, 128, 141, 1);
   }
 
-  .main-container {
+  /* .main-container {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
   
-  .section {
+  /* .section {
     width: 50%;
-  }
+  } */
 
   .section-title {
     font-size: 20px;
@@ -72,23 +72,69 @@ body {
     color: var(--main-color);
   }
 
-  .section-info {
+  /* .section-info {
     font-size: 18px;
     font-weight: 200;
     color: var(--main-color);
-  }
+  } */
   
   .img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%;
     position: relative;
     left: 200px;
-    top: -150px;
+    top: -150px; */
   }
   
-#profile {
+/* #profile {
     position: relative;
     left: 800px;
     top: -300px;
+} */
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  margin-right: 20px; /* Пространство между фото и заголовками */
+  /* Стилизация блока с фото */
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  /* Стилизация блока с заголовками */
+}
+
+.info {
+  display: flex;
+  justify-content: center; /* Центрирование секций */
+  padding: 20px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center; /* Центрирование контейнеров */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Растягивание секций вертикально */
+  width: 400px; /* Максимальная ширина контейнера */
+}
+
+.section {
+  border: 1px solid gray; /* Добавление границы на секции */
+  padding: 10px; /* Добавление отступов внутри секций */
+  margin-bottom: 10px; /* Пространство между контейнерами */
+}
+
+footer {
+  background: lightgray;
+  padding: 20px;
 }
