@@ -1,6 +1,8 @@
 :root {
-    --blue-color: rgba(42, 174, 231, 1);
+    --blue-color: rgba(144, 205, 244, 1);
     --main-color: rgba(16, 18, 20, 1);
+    --yellow-color: rgba(251, 211, 141, 1);
+    --orange-color: rgba(237, 137, 54, 1);
 }
 @media (max-width: 768px) {
     .section {
@@ -20,121 +22,98 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.5;
     color: var(--main-color)
 }
 * {
     box-sizing: border-box;
   }
-  /* .container {
+  .container {
     max-width: 1440px;
     margin: 0 auto;
-  } */
+  }
 
   .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .nav-list {
     list-style: none;
+    background-color: var(--yellow-color);
   }
 
   .nav-link {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: var(--blue-color);
+    color: var(--orange-color);
     transition: color 0.5s;
   }
 
-  
   .nav-link:hover {
     color: rgba(115, 128, 141, 1);
   }
 
-  /* .main-container {
+  .main-container {
     display: flex;
     flex-wrap: wrap;
-  } */
-  
-  /* .section {
-    width: 50%;
-  } */
+    justify-content: space-between;
+}
+  .section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 2px solid var(--blue-color);
+  }
 
-  .section-title {
-    font-size: 20px;
-    font-weight: 400;
+  .section-profile-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--main-color);
-  }
-
-  /* .section-info {
     font-size: 18px;
-    font-weight: 200;
-    color: var(--main-color);
-  } */
-  
-  .img {
-    width: 200px;
-    height: 200px;
-    /* border-radius: 50%;
-    position: relative;
-    left: 200px;
-    top: -150px; */
   }
-  
-/* #profile {
-    position: relative;
-    left: 800px;
-    top: -300px;
-} */
 
-.intro {
+  .section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--main-color);
+}
+
+.footer-container {
+  background-color: var(--yellow-color);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin: 0 auto;
 }
 
-.profile-pic {
-  margin-right: 20px; /* Пространство между фото и заголовками */
-  /* Стилизация блока с фото */
-}
-
-.titles {
-  display: flex;
-  flex-direction: column;
-  /* Стилизация блока с заголовками */
-}
-
-.info {
-  display: flex;
-  justify-content: center; /* Центрирование секций */
-  padding: 20px;
-}
-
-.column-container {
-  display: flex;
-  justify-content: center; /* Центрирование контейнеров */
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Растягивание секций вертикально */
-  width: 400px; /* Максимальная ширина контейнера */
-}
-
-.section {
-  border: 1px solid gray; /* Добавление границы на секции */
-  padding: 10px; /* Добавление отступов внутри секций */
-  margin-bottom: 10px; /* Пространство между контейнерами */
-}
-
-footer {
-  background: lightgray;
-  padding: 20px;
-}
+  .rss {
+    width: 121px;
+    height: 45px;
+  }
