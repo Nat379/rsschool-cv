@@ -105,6 +105,24 @@ body {
   color: var(--main-color);
 }
 
+a:link {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .footer-container {
   background-color: var(--yellow-color);
   display: flex;
