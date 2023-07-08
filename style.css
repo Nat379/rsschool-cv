@@ -3,6 +3,7 @@
     --main-color: rgba(16, 18, 20, 1);
     --yellow-color: rgba(251, 211, 141, 1);
     --orange-color: rgba(237, 137, 54, 1);
+    --main-blue: rgba(66, 153, 225, 1)
 }
 @media (max-width: 768px) {
     .section {
@@ -25,6 +26,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: var(--main-color)
+    
 }
 * {
     box-sizing: border-box;
@@ -46,12 +48,11 @@ body {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: var(--orange-color);
     transition: color 0.5s;
   }
 
   .nav-link:hover {
-    color: rgba(115, 128, 141, 1);
+    color: var(--orange-color);
   }
 
   .main-container {
@@ -65,6 +66,7 @@ body {
     width: 100%;
     padding: 50px 30px 35px;
     border-bottom: 2px solid var(--blue-color);
+    color: var(--main-blue);
   }
 
   .section-profile-logo {
@@ -85,7 +87,7 @@ body {
 
   .section {
     width: calc(50% - 20px);
-    padding: 10px;
+    padding: 30px;
     padding-bottom: 35px;
     border-bottom: 1px solid var(--blue-color);
 }
@@ -102,7 +104,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: var(--main-color);
+  color: var(--orange-color);
 }
 
 a:link {
